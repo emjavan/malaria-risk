@@ -18,19 +18,21 @@ fit_dispersion <- function(dispersion=0.16, rnot = 1.1){
 }
 
 get_optimal_dispersion <- function(rnot){
-  fit_disp_param <- optimise(fit_dispersion, interval = c(0.0,10), rnot = rnot)
-  min_disp = fit_disp_param$minimum
+  max_search = 10
+  if(rnot==0){ # When 0 neg binom could return anything, so set as the max of interval below
+    min_disp = max_search
+  }else{
+    fit_disp_param <- optimise(fit_dispersion, interval = c(0.0,max_search), rnot = rnot)
+    min_disp = fit_disp_param$minimum
+  } # end if
   return(min_disp)
-}
+} # end function
 
-tibble(potential_rnots = seq(0.001, 3, length = 1000)) |> 
+tibble(potential_rnots = seq(0.0, 3.65, 0.01) ) |> 
   mutate(dispersion = map(potential_rnots, get_optimal_dispersion) |> unlist()) -> combos
-combos
-
-get_optimal_dispersion(r=3)
-
 
 combos |> 
   # filter(dispersion < ) |> 
   ggplot(aes(potential_rnots, dispersion )) +
-  geom_line()
+  geom_line()+
+  theme_bw()

@@ -12,14 +12,20 @@ fit_dispersion <- function(dispersion=0.16, rnot = 1.1){
   x_val <- xs[ which(cum_sum_vals<(1-Q))[length( which(cum_sum_vals<(1-Q)) )] ] # get upper limit
   
   return( abs(1-P - pnbinom(q = x_val, mu = rnot, size = dispersion)) )
-}
+} # end fit_dispersion
 
 get_optimal_dispersion <- function(rnot){
-  fit_disp_param <- optimise(fit_dispersion, interval = c(0.0,10), rnot = rnot)
-  min_disp = fit_disp_param$minimum
+  max_search = 10
+  if(rnot==0){ # When 0 neg binom could return anything, so set as the max of interval below
+    min_disp = max_search
+  }else{
+    fit_disp_param <- optimise(fit_dispersion, interval = c(0.0,max_search), rnot = rnot)
+    min_disp = fit_disp_param$minimum
+  } # end if
   return(min_disp)
-}
+} # end get_optimal_dispersion
 
+###################################################
 #' Default malaria parameters for sims
 #' 
 #' A function that gives a list of parameters for running a malaria simulation.
@@ -347,9 +353,14 @@ save_malaria_runs <- function(num_reps,
   if(!file.exists(saved_file_path) | refresh){
     print("Running the simulation")
     print(parms)
+    start_time <- Sys.time()
     sims <- run_n_malaria_sims(num_reps, parms)  
     save(sims, file = saved_file_path)
     print("Simulation completed")
+    end_time <- Sys.time()
+    total_time = end_time - start_time
+    print(paste0("total run time for R0=", base_r_not, " intro_rate=", intro_rate, " num_reps=", num_reps,
+                 " is ", round(total_time, 2), " sec" ))
     return("Refreshed")
   } else{
     return("Already run before")
