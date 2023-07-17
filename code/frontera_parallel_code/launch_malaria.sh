@@ -1,11 +1,11 @@
 #!/bin/bash
 
-#SBATCH -J vary_gen_time                 # Job name
-#SBATCH -o vary_gen_time.%j.o            # Name of stdout output file (%j expands to jobId)
-#SBATCH -e vary_gen_time.%j.e            # Name of stdout output file (%j expands to jobId)
-#SBATCH -p normal                        # Queue name, small is for <=2 nodes
-#SBATCH -N 2                   	         # Total number of nodes requested (24 cores/node)
-#SBATCH -n 112                           # Total number of tasks to run
+#SBATCH -J vary_r0_import                # Job name
+#SBATCH -o vary_r0_import.%j.o           # Name of stdout output file (%j expands to jobId)
+#SBATCH -e vary_r0_import.%j.e           # Name of stdout output file (%j expands to jobId)
+#SBATCH -p small                        # Queue name, small is for <=2 nodes
+#SBATCH -N 1                   	         # Total number of nodes requested (24 cores/node)
+#SBATCH -n 4                         # Total number of tasks to run
 #SBATCH -t 06:00:00            	         # Run time (hh:mm:ss)
 #SBATCH -A A-ib1                         # Allocation name
 #SBATCH --mail-user=emjavan@utexas.edu   # Email for notifications

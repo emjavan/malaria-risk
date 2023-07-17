@@ -1,4 +1,4 @@
-Rscript --no-save run-malaria-sims-only_parallel.R 0 0
+Rscript --no-save run-malaria-sims-only_parallel.R 0.001 0
 Rscript --no-save run-malaria-sims-only_parallel.R 3.65 0
-Rscript --no-save run-malaria-sims-only_parallel.R 0 0.063
+Rscript --no-save run-malaria-sims-only_parallel.R 0.001 0.063
 Rscript --no-save run-malaria-sims-only_parallel.R 3.65 0.063
