@@ -1,0 +1,54 @@
+Recipient,URL,data,Core Funding,COVID-19 Funding,Population,Funding per person,Detect index,Point estimate_det_prob,sce_1_det_prob,sce_2_det_prob,sce_3_det_prob,sce_4_det_prob
+Alabama,https://www.alabamapublichealth.gov/index.html,state,1895343,1662264,5074296,0.373518415,37.87%,1.72%,1.38%,2.06%,2.75%,3.44%
+Alaska,https://dhss.alaska.gov/Pages/default.aspx,state,2216487,1586467,733583,3.021453605,306.35%,13.91%,11.13%,16.70%,22.26%,27.83%
+Arizona,https://www.azdhs.gov/,state,2868459,3364500,7359197,0.389778803,39.52%,1.79%,1.44%,2.15%,2.87%,3.59%
+Arkansas,https://www.healthy.arkansas.gov/,state,2126337,1441085,3045637,0.698158382,70.79%,3.22%,2.57%,3.86%,5.14%,6.43%
+California,https://www.cdph.ca.gov/,state,10362274,11686731,39029342,0.265499582,26.92%,1.22%,0.98%,1.47%,1.96%,2.45%
+Colorado,https://cdphe.colorado.gov/,state,5999774,7616943,5839926,1.02737158,104.17%,4.73%,3.78%,5.68%,7.57%,9.46%
+Connecticut,https://portal.ct.gov/DPH,state,2559951,1340914,3626205,0.705958709,71.58%,3.25%,2.60%,3.90%,5.20%,6.50%
+Delaware,https://www.dhss.delaware.gov/dhss/dph/index.html,state,2603053,3132767,1018396,2.556032231,259.16%,11.77%,9.42%,14.12%,18.83%,23.54%
+District Of Columbia,https://dchealth.dc.gov/,city,2136994,1509864,671803,3.180983116,322.53%,14.65%,11.72%,17.58%,23.44%,29.30%
+Florida,https://www.floridahealth.gov/,state,4123281,1802993,22244823,0.185359128,18.79%,0.85%,0.68%,1.02%,1.37%,1.71%
+Georgia,https://dph.georgia.gov/,state,3521597,2821209,10912876,0.322701092,32.72%,1.49%,1.19%,1.78%,2.38%,2.97%
+Hawaii,https://health.hawaii.gov/,state,1943945,1706429,1440196,1.349778086,136.86%,6.22%,4.97%,7.46%,9.95%,12.43%
+Idaho,https://healthandwelfare.idaho.gov/,state,1570357,701171,1939033,0.809866052,82.11%,3.73%,2.98%,4.47%,5.97%,7.46%
+Illinois,https://dph.illinois.gov/,state,1887316,4751579,12582032,0.15000089,15.21%,0.69%,0.55%,0.83%,1.11%,1.38%
+Indiana,https://www.in.gov/health/,state,2804594,961418,6833037,0.41044619,41.62%,1.89%,1.51%,2.27%,3.02%,3.78%
+Iowa,https://idph.iowa.gov/,state,3197687,6159887,3200517,0.999115768,101.30%,4.60%,3.68%,5.52%,7.36%,9.20%
+Kansas,https://www.kdhe.ks.gov/,state,2339429,2575281,2937150,0.796496263,80.76%,3.67%,2.93%,4.40%,5.87%,7.34%
+Kentucky,https://www.chfs.ky.gov/agencies/dph/Pages/default.aspx,state,2596633,1711758,4512310,0.575455365,58.35%,2.65%,2.12%,3.18%,4.24%,5.30%
+Louisiana,https://ldh.la.gov/,state,2142594,2523359,4590241,0.46677157,47.33%,2.15%,1.72%,2.58%,3.44%,4.30%
+Maine,https://www.maine.gov/dhhs/,state,2293626,1747887,1385340,1.655641214,167.87%,7.62%,6.10%,9.15%,12.20%,15.25%
+Maryland,https://health.maryland.gov/Pages/Home.aspx,state,5144569,1764354,6164660,0.834525992,84.61%,3.84%,3.07%,4.61%,6.15%,7.69%
+Massachusetts,https://www.mass.gov/orgs/department-of-public-health,state,6800136,4201874,6981974,0.973956076,98.75%,4.49%,3.59%,5.38%,7.18%,8.97%
+Michigan,https://www.michigan.gov/mdhhs,state,6694072,1651075,10034113,0.667131415,67.64%,3.07%,2.46%,3.69%,4.92%,6.14%
+Minnesota,https://www.health.state.mn.us/,state,8553088,6028569,5717184,1.496031613,151.69%,6.89%,5.51%,8.27%,11.02%,13.78%
+Mississippi,https://msdh.ms.gov/,state,1301827,791913,2940057,0.442789715,44.90%,2.04%,1.63%,2.45%,3.26%,4.08%
+Missouri,https://health.mo.gov/,state,1558132,502571,6177957,0.252208295,25.57%,1.16%,0.93%,1.39%,1.86%,2.32%
+Montana,https://dphhs.mt.gov/,state,1648729,1918212,1122867,1.468320825,148.88%,6.76%,5.41%,8.11%,10.82%,13.52%
+Nebraska,https://dhhs.ne.gov/Pages/default.aspx,state,3220876,1671729,1967923,1.636688021,165.95%,7.54%,6.03%,9.04%,12.06%,15.07%
+Nevada,https://dhhs.nv.gov/,state,2084665,1702806,3177772,0.656014654,66.51%,3.02%,2.42%,3.62%,4.83%,6.04%
+New Hampshire,https://www.dhhs.nh.gov/,state,1978069,3164204,1395231,1.417735844,143.75%,6.53%,5.22%,7.83%,10.45%,13.06%
+New Jersey,https://www.nj.gov/health/,state,3554807,2871122,9261699,0.383818023,38.92%,1.77%,1.41%,2.12%,2.83%,3.54%
+New Mexico,https://www.nmhealth.org/,state,2637756,2167544,2113344,1.248143227,126.55%,5.75%,4.60%,6.90%,9.20%,11.49%
+New York,https://health.ny.gov/,state,8645809,8950836,19677151,0.439383171,44.55%,2.02%,1.62%,2.43%,3.24%,4.05%
+North Carolina,https://www.ncdhhs.gov/,state,3041076,2840653,10698973,0.284239992,28.82%,1.31%,1.05%,1.57%,2.09%,2.62%
+North Dakota,https://www.health.nd.gov/,state,1396048,515566,779261,1.791502462,181.64%,8.25%,6.60%,9.90%,13.20%,16.50%
+Ohio,https://odh.ohio.gov/,state,3584552,3362691,11756058,0.304911051,30.92%,1.40%,1.12%,1.69%,2.25%,2.81%
+Oklahoma,https://oklahoma.gov/health.html,state,2346818,923432,4019800,0.583814618,59.19%,2.69%,2.15%,3.23%,4.30%,5.38%
+Oregon,https://www.oregon.gov/oha/ph/pages/index.aspx,state,2894936,4675303,4240137,0.682745864,69.22%,3.14%,2.51%,3.77%,5.03%,6.29%
+Pennsylvania,https://www.health.pa.gov/Pages/default.aspx,state,3351687,2737484,12972008,0.258378425,26.20%,1.19%,0.95%,1.43%,1.90%,2.38%
+Puerto Rico,https://www.salud.gov.pr/,state,1350680,72907,3221789,0.419232917,42.51%,1.93%,1.54%,2.32%,3.09%,3.86%
+Rhode Island,https://health.ri.gov/,state,2082650,1780550,1093734,1.904164998,193.07%,8.77%,7.01%,10.52%,14.03%,17.54%
+South Carolina,https://scdhec.gov/,state,2589107,1364985,5282634,0.490116673,49.69%,2.26%,1.81%,2.71%,3.61%,4.51%
+South Dakota,https://doh.sd.gov/,state,1353475,666970,909824,1.487622881,150.83%,6.85%,5.48%,8.22%,10.96%,13.70%
+Tennessee,https://www.tn.gov/health.html,state,7507419,1614373,7051339,1.064679914,107.95%,4.90%,3.92%,5.88%,7.84%,9.81%
+Texas,https://www.dshs.texas.gov/,state,3995395,1934015,30029572,0.133048683,13.49%,0.61%,0.49%,0.74%,0.98%,1.23%
+Utah,https://dhhs.utah.gov/,state,5471840,2438777,3380800,1.618504496,164.10%,7.45%,5.96%,8.94%,11.92%,14.91%
+Vermont,https://www.healthvermont.gov/,state,1824340,1725268,647064,2.81941199,285.87%,12.98%,10.39%,15.58%,20.77%,25.97%
+Virginia,https://www.vdh.virginia.gov/,state,5104364,3834160,8683619,0.587815288,59.60%,2.71%,2.17%,3.25%,4.33%,5.41%
+Washington,https://doh.wa.gov/,state,8856117,4399247,7785786,1.13747244,115.33%,5.24%,4.19%,6.29%,8.38%,10.48%
+West Virginia,https://dhhr.wv.gov/Pages/default.aspx,state,954235,2440056,1775156,0.537549939,54.50%,2.48%,1.98%,2.97%,3.96%,4.95%
+Wisconsin,https://www.dhs.wisconsin.gov/,state,5703549,2547484,5892539,0.967927238,98.14%,4.46%,3.57%,5.35%,7.13%,8.91%
+Wyoming,https://www.cdc.gov/ncezid/dpei/eip/eip-sites.html,state,1369717,2481483,581381,2.355971385,238.88%,10.85%,8.68%,13.02%,17.36%,21.70%
+,,,,,,0.986273926,,,,,,
