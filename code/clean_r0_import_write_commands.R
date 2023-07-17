@@ -30,8 +30,12 @@ distinct_r0_import = county_single_rnot_samples_new %>%
   distinct() %>%
   ungroup() # 124007 > 13052, so it's best to run all unique combination and look up from file to plot map
 
+# Selecting 4 for a test run of the extremes
+# Frontera may need the jobs batched out into sets of 1K commands
 all_r0_import_command = all_r0_import %>%
   rename(R0 = Var1, Import=Var2) %>%
+  filter(R0 %in% c(min(uniq_r0), max(uniq_r0)) ) %>%
+  filter(Import %in% c(min(uniq_imports), max(uniq_imports)) ) %>%
   mutate(command = paste0("Rscript --no-save run-malaria-sims-only_parallel.R ", R0, " ", Import ) ) %>%
   select(command)
 write.table(all_r0_import_command, "code/frontera_parallel_code/commands_malaria.txt", 
