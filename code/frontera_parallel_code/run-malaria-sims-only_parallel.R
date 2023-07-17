@@ -17,7 +17,7 @@ args             = commandArgs(TRUE)
 base_r_not       = as.double(args[1]) # R0 = [0, 1.5] by 0.1
 intro_rate       = as.double(args[2]) # Intro_rate = [0, 0.3] by 0.05
 run_df           = expand_grid(base_r_not, intro_rate)
-num_runs         = 100
+num_runs         = 10000
 
 ## Run and save simulations across all parameter combinations
 if(!dir.exists("../../processed_data/")){
