@@ -2,6 +2,24 @@
 ## Code for simulations
 ###############################
 
+# Overdispersion parameter estimation
+# Based on this paper: https://onlinelibrary.wiley.com/doi/10.1111/tbed.14655#pane-pcw-figures
+fit_dispersion <- function(dispersion=0.16, rnot = 1.1){
+  P <- 0.2 # For malaria from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3128496/
+  Q <- 0.8 # and https://www.nature.com/articles/438293a
+  xs <- 0:100 # X = 100
+  cum_sum_vals <- cumsum(xs * dnbinom(xs, mu = rnot, size = dispersion) / rnot) # 1 - Q
+  x_val <- xs[ which(cum_sum_vals<(1-Q))[length( which(cum_sum_vals<(1-Q)) )] ] # get upper limit
+  
+  return( abs(1-P - pnbinom(q = x_val, mu = rnot, size = dispersion)) )
+}
+
+get_optimal_dispersion <- function(rnot){
+  fit_disp_param <- optimise(fit_dispersion, interval = c(0.0,10), rnot = rnot)
+  min_disp = fit_disp_param$minimum
+  return(min_disp)
+}
+
 #' Default malaria parameters for sims
 #' 
 #' A function that gives a list of parameters for running a malaria simulation.
@@ -24,9 +42,9 @@
 #' @param dis_prob_symp Probability of discovery for symptomatic individuals
 #' @param dis_prob_asymp Probability of discovery for asymptomatic individuals
 #' @return A list of length num_reps, where each component is a single call to run_malaria_sim.
-malaria_params_fn = function(base_r_not           = 1.5,
-                             base_det_prob        = 0.5,                       ## Need to determine still 2023-07-07
-                             intro_rate           = 0,
+malaria_params_fn = function(base_r_not           = 1.5,                       ## county specific 
+                             base_det_prob        = 0.0385,                    ## symptomatic_rate*self_report_rate = 0.25*0.154
+                             intro_rate           = 0.01,                      ## county specific (prob of import * 2044)/365
                              
                              gen_time             = 51,                        ## https://www.mdpi.com/2076-2607/8/7/984
                              inf_period           = 34,                        ## https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4323116/
@@ -36,10 +54,10 @@ malaria_params_fn = function(base_r_not           = 1.5,
                              incub_rate           = incBoxes/exp_period, 	     ## nu 	  
                              recov_p              = infBoxes/inf_period,       ## delta
 
-                             base_dispersion      = 0.16,                      ## Lloyd-Smith et al. 2005 for SARS -> need an estimate
+                             base_dispersion      = get_optimal_dispersion(base_r_not), ## see above
                              dispersion           = base_dispersion/inf_period,  
                              prop_p               = base_dispersion/(base_r_not+base_dispersion), # beta
-                             e_thresh             = 500,                       # was 2000 for covid and 500 for zika
+                             e_thresh             = 2000,                       # was 2000 for covid and 500 for zika
                              prob_symp            = 1,
                              dis_prob_symp        = base_det_prob/inf_period,
                              dis_prob_asymp       = 0.0
