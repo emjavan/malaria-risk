@@ -2,6 +2,8 @@
 processed_data/
 input_data/Huber_et_al_2016/
 input_data/us_county_geometries.rda
+code/ZW_Code_Overdisp
+
 
 # History files
 .Rhistory
