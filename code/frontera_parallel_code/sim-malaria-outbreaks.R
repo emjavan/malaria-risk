@@ -353,14 +353,9 @@ save_malaria_runs <- function(num_reps,
   if(!file.exists(saved_file_path) | refresh){
     print("Running the simulation")
     print(parms)
-    start_time <- Sys.time()
     sims <- run_n_malaria_sims(num_reps, parms)  
     save(sims, file = saved_file_path)
     print("Simulation completed")
-    end_time <- Sys.time()
-    total_time = end_time - start_time
-    print(paste0("total run time for R0=", base_r_not, " intro_rate=", intro_rate, " num_reps=", num_reps,
-                 " is ", round(total_time, 2), " sec" ))
     return("Refreshed")
   } else{
     return("Already run before")
