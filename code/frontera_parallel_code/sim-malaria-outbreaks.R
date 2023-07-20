@@ -63,7 +63,7 @@ malaria_params_fn = function(base_r_not           = 1.5,                       #
                              base_dispersion      = get_optimal_dispersion(base_r_not), ## see above
                              dispersion           = base_dispersion/inf_period,  
                              prop_p               = base_dispersion/(base_r_not+base_dispersion), # beta
-                             e_thresh             = 500,                       # was 2000 for covid and 500 for zika
+                             e_thresh             = 1000,                       # was 2000 for covid and 500 for zika
                              prob_symp            = 1,
                              dis_prob_symp        = base_det_prob/inf_period,
                              dis_prob_asymp       = 0.0
@@ -375,8 +375,8 @@ get_epi_prob = function(data_path){
   }else{
     epi_probs <- get_epidemic_prob_by_d(trials = sims, 
                                         prev_threshold = 50,
-                                        cum_threshold = 500, # should match e_thresh
-                                        max_detect = 210) # the max number of cases to get epi_prob for
+                                        cum_threshold = 1000, # should match e_thresh
+                                        max_detect = 100) # the max number of cases to get epi_prob for
     epi_probs$prob_epidemic[is.na(epi_probs$prob_epidemic)]=1
     
     ## write to processed_data folder to use for plotting
