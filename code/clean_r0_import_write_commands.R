@@ -4,12 +4,13 @@
 load("input_data/impProbByCounty_2023-07-14.RData")
 
 impProbByCounty_new = impProbByCounty %>%
-  mutate(daily_import = (ProbNextOcc*2044)/365,
+  mutate(daily_import = (ProbNextOcc*2044 - 1)/365, # shifting all values down by 1 bc the sim starts with 1 import
          daily_import_round3 = round(daily_import, 3))
+impProbByCounty_new$daily_import_round3[impProbByCounty_new$daily_import_round3<0]=0
 
 uniq_imports = unique(impProbByCounty_new$daily_import_round3)
-length(uniq_imports) # 52 unique daily import probs
-range(uniq_imports) # 0 to 0.063
+length(uniq_imports) # 54 unique daily import probs
+range(uniq_imports) # 0 to 0.06
 
 # County specific R0
 load("input_data/county-single-rnot-estimates_2023-07-13.rda")
@@ -22,7 +23,7 @@ length(uniq_r0) # 251 unique daily import probs
 range(uniq_r0) # 0.00 to 3.65
 
 # sorting is just for ease of looking at final commands txt file
-all_r0_import = expand.grid(sort(uniq_r0), sort(uniq_imports) ) # 251 * 52 = 13052
+all_r0_import = expand.grid(sort(uniq_r0), sort(uniq_imports) ) # 251 * 54 = 13554
 
 distinct_r0_import = county_single_rnot_samples_new %>%
   select(fips, rnot_round2, daily_import_round3) %>%
