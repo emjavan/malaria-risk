@@ -49,7 +49,7 @@ get_optimal_dispersion <- function(rnot){
 #' @param dis_prob_asymp Probability of discovery for asymptomatic individuals
 #' @return A list of length num_reps, where each component is a single call to run_malaria_sim.
 malaria_params_fn = function(base_r_not           = 1.5,                       ## county specific 
-                             base_det_prob        = 0.0385,                    ## symptomatic_rate*self_report_rate = 0.25*0.154
+                             base_det_prob        = 0.25,                      ## symptomatic_rate*self_report_rate = 0.25*0.154
                              intro_rate           = 0.01,                      ## county specific (prob of import * 2044)/365
                              
                              gen_time             = 51,                        ## https://www.mdpi.com/2076-2607/8/7/984
