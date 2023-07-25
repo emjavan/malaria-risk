@@ -54,7 +54,7 @@ if( !(n_expect==n_epi) ){
   base_r_not = unique(epi_missing$rnot)
   intro_rate = unique(epi_missing$import)
   path       = folder_path
-  run_df     = expand_grid(base_r_not, intro_rate)
+  run_df     = expand_grid(base_r_not, intro_rate, path)
   num_runs   = 10000
   
   run_df %>% 
