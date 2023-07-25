@@ -13,13 +13,15 @@ range(uniq_imports) # 0 to 0.273
 
 # County specific R0
 load("input_data/county-single-rnot-estimates_2023-07-13.rda")
-
 county_single_rnot_samples_new = county_single_rnot_samples %>%
   mutate(rnot_round2 = round(rnot, 2)  ) %>%
   left_join(impProbByCounty_new %>% mutate(fips=as.character(fips)), by="fips")
+county_single_rnot_samples_new[is.na(county_single_rnot_samples_new)]=0
 uniq_r0 = unique(county_single_rnot_samples_new$rnot_round2)
 length(uniq_r0) # 251 unique daily import probs
 range(uniq_r0) # 0.00 to 3.65
+write.csv(county_single_rnot_samples_new, 
+          "processed_data/all_rnot_import_per_county_2023-07-22.csv", row.names = F)
 
 # sorting is just for ease of looking at final commands txt file
 all_r0_import = expand.grid(sort(uniq_r0), sort(uniq_imports) ) # 251 * 65 = 16315
@@ -28,7 +30,7 @@ distinct_r0_import = county_single_rnot_samples_new %>%
   select(fips, rnot_round2, daily_import_round3) %>%
   group_by(fips) %>%
   distinct() %>%
-  ungroup() # 124007 > 13052, so it's best to run all unique combination and look up from file to plot map
+  ungroup() # 124007 >> 16315, so it's best to run all unique combination and look up from file to plot map
 
 # Selecting 4 for a test run of the extremes
 # Frontera may need the jobs batched out into sets of 1K commands

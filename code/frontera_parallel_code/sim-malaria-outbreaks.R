@@ -339,7 +339,7 @@ get_save_path <- function(base_r_not,
                           summary = FALSE){
   if(summary){
     paste0("../../processed_data/county-summary_", base_r_not, "_", intro_rate, "_", num_reps, "_", Sys.Date(), ".rda")
-  }else {
+  }else{
     paste0("../../processed_data/sim_", base_r_not, "_", intro_rate, "_", num_reps, "_", Sys.Date(), ".rda")  
   } # end if else
 } # end function get_save_path
