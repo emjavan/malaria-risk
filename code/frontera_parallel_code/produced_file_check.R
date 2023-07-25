@@ -53,6 +53,7 @@ if( !(n_expect==n_epi) ){
   write.csv(epi_missing, "../../processed_data/missing_epiprobs.csv", row.names = F)
   base_r_not = unique(epi_missing$rnot)
   intro_rate = unique(epi_missing$import)
+  path       = folder_path
   run_df     = expand_grid(base_r_not, intro_rate)
   num_runs   = 10000
   

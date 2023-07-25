@@ -16,12 +16,13 @@ source("sim-malaria-outbreaks.R")
 args             = commandArgs(TRUE)
 base_r_not       = as.double(args[1]) # R0
 intro_rate       = as.double(args[2]) # Intro_rate
-run_df           = expand_grid(base_r_not, intro_rate)
+path             = "../../processed_data/full_run_processed_data/"
+run_df           = expand_grid(base_r_not, intro_rate, path)
 num_runs         = 10000
 
 ## Run and save simulations across all parameter combinations
-if(!dir.exists("../../processed_data/")){
-  dir.create("../../processed_data/")
+if(!dir.exists(path)){
+  dir.create(path)
 }
 start_time <- Sys.time()
 run_df %>% # pipe the 2 inputs into save_malaria_runs function, when refresh is FALSE it will not overwrite an existing output

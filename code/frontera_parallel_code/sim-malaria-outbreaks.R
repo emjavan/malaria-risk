@@ -336,11 +336,12 @@ run_malaria_sim <- function(params) {
 get_save_path <- function(base_r_not, 
                           intro_rate,
                           num_reps,
+                          path,
                           summary = FALSE){
   if(summary){
-    paste0("../../processed_data/county-summary_", base_r_not, "_", intro_rate, "_", num_reps, "_", Sys.Date(), ".rda")
+    paste0(path, "county-summary_", base_r_not, "_", intro_rate, "_", num_reps, "_", Sys.Date(), ".rda")
   }else{
-    paste0("../../processed_data/sim_", base_r_not, "_", intro_rate, "_", num_reps, "_", Sys.Date(), ".rda")  
+    paste0(path, "sim_", base_r_not, "_", intro_rate, "_", num_reps, "_", Sys.Date(), ".rda")  
   } # end if else
 } # end function get_save_path
 
@@ -349,7 +350,7 @@ save_malaria_runs <- function(num_reps,
                               ...) {
   parms <- malaria_params_fn() # get the parameters defined above or those passed
   
-  saved_file_path <- get_save_path(base_r_not, intro_rate, num_reps) # pass params that vary to change file names
+  saved_file_path <- get_save_path(base_r_not, intro_rate, num_reps, path) # pass params that vary to change file names
   if(!file.exists(saved_file_path) | refresh){
     print("Running the simulation")
     print(parms)
