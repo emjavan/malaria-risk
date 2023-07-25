@@ -1,0 +1,6733 @@
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    2
+   Working directory:  /work2/06778/emj976/frontera/malaria-risk/code/frontera_parallel_code
+   Processes per host: 56
+   Total processes:    112
+   Total jobs:         112
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 5 running job 6 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0.25)
+Launcher: Task 35 running job 36 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0)
+Launcher: Task 31 running job 32 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.15)
+Launcher: Task 91 running job 92 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0)
+Launcher: Task 89 running job 90 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0.25)
+Launcher: Task 67 running job 68 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0.2)
+Launcher: Task 1 running job 2 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0.05)
+Launcher: Task 20 running job 21 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.3)
+Launcher: Task 13 running job 14 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0.3)
+Launcher: Task 81 running job 82 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0.2)
+Launcher: Task 68 running job 69 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0.25)
+Launcher: Task 86 running job 87 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0.1)
+Launcher: Task 79 running job 80 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0.1)
+Launcher: Task 99 running job 100 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0.05)
+Launcher: Task 103 running job 104 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0.25)
+Launcher: Task 93 running job 94 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0.1)
+Launcher: Task 100 running job 101 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0.1)
+Launcher: Task 24 running job 25 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.15)
+Launcher: Task 21 running job 22 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0)
+Launcher: Task 63 running job 64 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0)
+Launcher: Task 19 running job 20 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.25)
+Launcher: Task 107 running job 108 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0.1)
+Launcher: Task 0 running job 1 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0)
+Launcher: Task 30 running job 31 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.1)
+Launcher: Task 46 running job 47 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0.2)
+Launcher: Task 95 running job 96 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0.2)
+Launcher: Task 45 running job 46 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0.15)
+Launcher: Task 42 running job 43 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0)
+Launcher: Task 74 running job 75 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0.2)
+Launcher: Task 44 running job 45 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0.1)
+Launcher: Task 39 running job 40 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0.2)
+Launcher: Task 104 running job 105 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0.3)
+Launcher: Task 96 running job 97 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0.25)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+[1] "Running the simulation"
+$gen_time
+[1] 51
+
+$inf_period
+[1]$base_r_not
+[1] 1.5
+
+ 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1]$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+ 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$dis_prob_asymp
+[1] 0
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+[1]$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+ "Running the simulation"
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1]
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+ 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+[1] "Running the simulation"
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1][1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+ 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+[1] "Running the simulation"
+$base_r_not
+[1]$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+ 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+[1]$dis_prob_asymp
+[1] 0
+
+ "Running the simulation"
+
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$base_r_not
+[1]$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+ 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1]$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+ 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1]$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0
+
+ "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1][1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+ 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1][1] "Running the simulation"
+ 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+[1]
+$prob_symp
+[1] 1 "Running the simulation"
+
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1]$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+[1]$incub_rate
+[1] 0.8235294
+ "Running the simulation"
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1]$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554$base_r_not
+
+
+[1]$e_thresh
+[1] 1.5 500
+
+
+
+$prob_symp
+$base_det_prob
+[1][1] 1
+ 0.5
+
+
+$dis_prob_symp
+$intro_rate
+[1][1] 0.01470588 0
+
+
+
+ 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+$gen_time
+$dis_prob_asymp
+[1][1] 0 51
+
+
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1][1] 0.004705882
+
+$prop_p
+[1] "Running the simulation" 0.09638554
+
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1]$base_r_not
+ 0[1]
+[1]
+ 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] "Running the simulation"
+ 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1][1] 0.8235294
+
+ "Running the simulation"
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$base_r_not
+[1]$prop_p
+[1] 0.09638554
+ 1.5
+
+
+$e_thresh
+[1] 500$base_det_prob
+
+
+[1] 0.5$prob_symp
+
+
+$intro_rate
+[1] 0[1]
+
+ 1
+
+$gen_time
+[1]$dis_prob_symp
+ 51[1]
+
+ 0.01470588$inf_period
+
+[1]
+ 34
+$dis_prob_asymp
+
+[1] 0
+$infBoxes
+
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1][1] 500
+
+$prob_symp
+ "Running the simulation"[1] 1
+
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588[1]
+
+$dis_prob_asymp
+[1] 0
+
+ "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 14 running job 15 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0)
+Launcher: Task 53 running job 54 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0.2)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 69 running job 70 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0.3)
+Launcher: Task 57 running job 58 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0.05)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 33 running job 34 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.25)
+Launcher: Task 38 running job 39 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0.15)
+Launcher: Task 85 running job 86 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0.05)
+Launcher: Task 55 running job 56 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0.3)
+Launcher: Task 80 running job 81 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0.15)
+Launcher: Task 70 running job 71 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0)
+Launcher: Task 110 running job 111 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0.25)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 17 running job 18 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.15)
+Launcher: Task 28 running job 29 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 4 running job 5 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0.2)
+Launcher: Task 83 running job 84 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0.3)
+Launcher: Task 90 running job 91 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0.3)
+Launcher: Task 51 running job 52 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0.1)
+Launcher: Task 50 running job 51 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0.05)
+Launcher: Task 52 running job 53 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0.15)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 88 running job 89 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0.2)
+Launcher: Task 109 running job 110 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0.2)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 73 running job 74 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0.15)
+Launcher: Task 82 running job 83 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0.25)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 3 running job 4 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0.15)
+Launcher: Task 61 running job 62 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0.25)
+Launcher: Task 25 running job 26 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.2)
+Launcher: Task 12 running job 13 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0.25)
+Launcher: Task 60 running job 61 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0.2)
+Launcher: Task 62 running job 63 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0.3)
+Launcher: Task 36 running job 37 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0.05)
+Launcher: Task 29 running job 30 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.05)
+Launcher: Task 41 running job 42 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0.3)
+Launcher: Task 54 running job 55 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0.25)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 7 running job 8 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0)
+Launcher: Task 47 running job 48 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0.25)
+Launcher: Task 48 running job 49 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0.3)
+Launcher: Task 106 running job 107 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0.05)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 18 running job 19 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.2)
+Launcher: Task 34 running job 35 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.3)
+Launcher: Task 32 running job 33 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.2)
+Launcher: Task 66 running job 67 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0.15)
+Launcher: Task 84 running job 85 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0)
+Launcher: Task 77 running job 78 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0)
+Launcher: Task 37 running job 38 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0.1)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 26 running job 27 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.25)
+Launcher: Task 65 running job 66 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0.1)
+Launcher: Task 76 running job 77 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0.3)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 6 running job 7 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0.3)
+Launcher: Task 40 running job 41 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.5 0.25)
+Launcher: Task 75 running job 76 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0.25)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 11 running job 12 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0.2)
+Launcher: Task 71 running job 72 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0.05)
+Launcher: Task 64 running job 65 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.9 0.05)
+Launcher: Task 49 running job 50 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.7 0)
+Launcher: Task 97 running job 98 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0.3)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 10 running job 11 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0.15)
+Launcher: Task 56 running job 57 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0)
+Launcher: Task 16 running job 17 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.1)
+Launcher: Task 9 running job 10 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0.1)
+Launcher: Task 27 running job 28 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.3)
+Launcher: Task 8 running job 9 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.1 0.05)
+Launcher: Task 59 running job 60 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0.15)
+Launcher: Task 43 running job 44 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.6 0.05)
+Launcher: Task 72 running job 73 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1 0.1)
+Launcher: Task 108 running job 109 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0.15)
+Launcher: Task 92 running job 93 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0.05)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 15 running job 16 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.05)
+Launcher: Task 78 running job 79 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.1 0.05)
+Launcher: Task 22 running job 23 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.05)
+Launcher: Task 87 running job 88 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.2 0.15)
+Launcher: Task 101 running job 102 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0.15)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 58 running job 59 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.8 0.1)
+Launcher: Task 2 running job 3 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0 0.1)
+Launcher: Task 98 running job 99 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0)
+Launcher: Task 94 running job 95 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.3 0.15)
+Launcher: Task 111 running job 112 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0.3)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 23 running job 24 on c210-018.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.1)
+Launcher: Task 105 running job 106 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.5 0)
+Launcher: Task 102 running job 103 on c210-019.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 1.4 0.2)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.5
+
+$intro_rate
+[1] 0
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.16
+
+$dispersion
+[1] 0.004705882
+
+$prop_p
+[1] 0.09638554
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.01470588
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 2 completed in 1589 seconds.
+Launcher: Task 1 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 36 completed in 1595 seconds.
+Launcher: Task 35 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 32 completed in 1598 seconds.
+Launcher: Task 31 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 100 completed in 1603 seconds.
+Launcher: Task 99 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 91 completed in 1596 seconds.
+Launcher: Task 90 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 74 completed in 1595 seconds.
+Launcher: Task 73 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 88 completed in 1588 seconds.
+Launcher: Task 87 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 82 completed in 1612 seconds.
+Launcher: Task 81 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 94 completed in 1612 seconds.
+Launcher: Task 93 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 71 completed in 1605 seconds.
+Launcher: Task 70 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 52 completed in 1606 seconds.
+Launcher: Task 51 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 6 completed in 1623 seconds.
+Launcher: Task 5 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 66 completed in 1607 seconds.
+Launcher: Task 65 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 73 completed in 1605 seconds.
+Launcher: Task 72 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 69 completed in 1625 seconds.
+Launcher: Task 68 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 76 completed in 1608 seconds.
+Launcher: Task 75 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 96 completed in 1623 seconds.
+Launcher: Task 95 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 80 completed in 1630 seconds.
+Launcher: Task 79 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 110 completed in 1619 seconds.
+Launcher: Task 109 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 92 completed in 1632 seconds.
+Launcher: Task 91 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 11 completed in 1612 seconds.
+Launcher: Task 10 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 51 completed in 1625 seconds.
+Launcher: Task 50 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 104 completed in 1636 seconds.
+Launcher: Task 103 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 111 completed in 1630 seconds.
+Launcher: Task 110 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 109 completed in 1620 seconds.
+Launcher: Task 108 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 62 completed in 1626 seconds.
+Launcher: Task 61 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 90 completed in 1641 seconds.
+Launcher: Task 89 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 25 completed in 1642 seconds.
+Launcher: Task 24 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 39 completed in 1638 seconds.
+Launcher: Task 38 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 72 completed in 1632 seconds.
+Launcher: Task 71 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 14 completed in 1653 seconds.
+Launcher: Task 13 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 84 completed in 1644 seconds.
+Launcher: Task 83 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 102 completed in 1635 seconds.
+Launcher: Task 101 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 63 completed in 1644 seconds.
+Launcher: Task 62 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 86 completed in 1651 seconds.
+Launcher: Task 85 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 99 completed in 1639 seconds.
+Launcher: Task 98 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 15 completed in 1655 seconds.
+Launcher: Task 14 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 19 completed in 1647 seconds.
+Launcher: Task 18 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 98 completed in 1644 seconds.
+Launcher: Task 97 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 108 completed in 1662 seconds.
+Launcher: Task 107 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 22 completed in 1663 seconds.
+Launcher: Task 21 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 68 completed in 1665 seconds.
+Launcher: Task 67 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 78 completed in 1649 seconds.
+Launcher: Task 77 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 27 completed in 1649 seconds.
+Launcher: Task 26 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 44 completed in 1646 seconds.
+Launcher: Task 43 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 33 completed in 1650 seconds.
+Launcher: Task 32 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 16 completed in 1646 seconds.
+Launcher: Task 15 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 87 completed in 1667 seconds.
+Launcher: Task 86 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 81 completed in 1662 seconds.
+Launcher: Task 80 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+[1] "Simulation completed"
+[1] "Refreshed"
+Launcher: Job 47 completed in 1671 seconds.
+Launcher: Task 46 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 70 completed in 1666 seconds.
+Launcher: Task 69 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 24 completed in 1654 seconds.
+Launcher: Task 23 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 58 completed in 1669 seconds.
+Launcher: Task 57 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 97 completed in 1672 seconds.
+Launcher: Task 96 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 35 completed in 1662 seconds.
+Launcher: Task 34 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+[1] "Simulation completed"
+[1] "Refreshed"
+Launcher: Job 40 completed in 1674 seconds.
+Launcher: Task 39 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 103 completed in 1656 seconds.
+Launcher: Task 102 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 20 completed in 1678 seconds.
+Launcher: Task 19 done. Exiting.
+Launcher: Job 85 completed in 1664 seconds.
+Launcher: Task 84 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 4 completed in 1666 seconds.
+Launcher: Task 3 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 50 completed in 1663 seconds.
+Launcher: Task 49 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 21 completed in 1683 seconds.
+Launcher: Task 20 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 67 completed in 1668 seconds.
+Launcher: Task 66 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 89 completed in 1673 seconds.
+Launcher: Task 88 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 5 completed in 1677 seconds.
+Launcher: Task 4 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 30 completed in 1675 seconds.
+Launcher: Task 29 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 57 completed in 1669 seconds.
+Launcher: Task 56 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 77 completed in 1674 seconds.
+Launcher: Task 76 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 41 completed in 1673 seconds.
+Launcher: Task 40 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 59 completed in 1670 seconds.
+Launcher: Task 58 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 101 completed in 1692 seconds.
+Launcher: Task 100 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 9 completed in 1674 seconds.
+Launcher: Task 8 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 54 completed in 1688 seconds.
+Launcher: Task 53 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 7 completed in 1677 seconds.
+Launcher: Task 6 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 31 completed in 1693 seconds.
+Launcher: Task 30 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 46 completed in 1693 seconds.
+Launcher: Task 45 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 106 completed in 1675 seconds.
+Launcher: Task 105 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 107 completed in 1683 seconds.
+Launcher: Task 106 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 60 completed in 1679 seconds.
+Launcher: Task 59 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 8 completed in 1685 seconds.
+Launcher: Task 7 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 10 completed in 1681 seconds.
+Launcher: Task 9 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 95 completed in 1679 seconds.
+Launcher: Task 94 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 3 completed in 1680 seconds.
+Launcher: Task 2 done. Exiting.
+Launcher: Job 56 completed in 1693 seconds.
+Launcher: Task 55 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 64 completed in 1702 seconds.
+Launcher: Task 63 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 38 completed in 1688 seconds.
+Launcher: Task 37 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 49 completed in 1691 seconds.
+Launcher: Task 48 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 93 completed in 1687 seconds.
+Launcher: Task 92 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 18 completed in 1697 seconds.
+Launcher: Task 17 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 61 completed in 1694 seconds.
+Launcher: Task 60 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 43 completed in 1704 seconds.
+Launcher: Task 42 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 1 completed in 1707 seconds.
+Launcher: Task 0 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 29 completed in 1701 seconds.
+Launcher: Task 28 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 34 completed in 1704 seconds.
+Launcher: Task 33 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 17 completed in 1694 seconds.
+Launcher: Task 16 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+[1] "Simulation completed"
+[1] "Refreshed"
+Launcher: Job 55 completed in 1703 seconds.
+Launcher: Task 54 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 75 completed in 1714 seconds.
+Launcher: Task 74 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 65 completed in 1701 seconds.
+Launcher: Task 64 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 53 completed in 1709 seconds.
+Launcher: Task 52 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 83 completed in 1708 seconds.
+Launcher: Task 82 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 37 completed in 1709 seconds.
+Launcher: Task 36 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 12 completed in 1704 seconds.
+Launcher: Task 11 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 13 completed in 1712 seconds.
+Launcher: Task 12 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 112 completed in 1710 seconds.
+Launcher: Task 111 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+[1] "Simulation completed"
+[1] "Refreshed"
+Launcher: Job 79 completed in 1713 seconds.
+Launcher: Task 78 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 45 completed in 1733 seconds.
+Launcher: Task 44 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 23 completed in 1724 seconds.
+Launcher: Task 22 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 28 completed in 1725 seconds.
+Launcher: Task 27 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 26 completed in 1732 seconds.
+Launcher: Task 25 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 42 completed in 1741 seconds.
+Launcher: Task 41 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 105 completed in 1761 seconds.
+Launcher: Task 104 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 48 completed in 1763 seconds.
+Launcher: Task 47 done. Exiting.
+Launcher: Done. Job exited without errors

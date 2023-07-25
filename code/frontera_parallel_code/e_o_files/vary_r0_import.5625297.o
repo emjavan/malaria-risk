@@ -1,0 +1,253 @@
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work2/06778/emj976/frontera/malaria-risk/code/frontera_parallel_code
+   Processes per host: 4
+   Total processes:    4
+   Total jobs:         4
+   Scheduling method:  interleaved
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+Launcher: Task 2 running job 3 on c211-006.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.001 0.063)
+Launcher: Task 3 running job 4 on c211-006.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 3.65 0.063)
+Launcher: Task 0 running job 1 on c211-006.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 0.001 0)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.0385
+
+$intro_rate
+[1] 0.01
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.2927681
+
+$dispersion
+[1] 0.008610826
+
+$prop_p
+[1] 0.163305
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.001132353
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.0385
+
+$intro_rate
+[1] 0.01
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.2927681
+
+$dispersion
+[1] 0.008610826
+
+$prop_p
+[1] 0.163305
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.001132353
+
+$dis_prob_asymp
+[1] 0
+
+Launcher: Task 1 running job 2 on c211-006.frontera.tacc.utexas.edu (Rscript --no-save run-malaria-sims-only_parallel.R 3.65 0)
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.0385
+
+$intro_rate
+[1] 0.01
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.2927681
+
+$dispersion
+[1] 0.008610826
+
+$prop_p
+[1] 0.163305
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.001132353
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Running the simulation"
+$base_r_not
+[1] 1.5
+
+$base_det_prob
+[1] 0.0385
+
+$intro_rate
+[1] 0.01
+
+$gen_time
+[1] 51
+
+$inf_period
+[1] 34
+
+$infBoxes
+[1] 22
+
+$exp_period
+[1] 34
+
+$incBoxes
+[1] 28
+
+$incub_rate
+[1] 0.8235294
+
+$recov_p
+[1] 0.6470588
+
+$base_dispersion
+[1] 0.2927681
+
+$dispersion
+[1] 0.008610826
+
+$prop_p
+[1] 0.163305
+
+$e_thresh
+[1] 500
+
+$prob_symp
+[1] 1
+
+$dis_prob_symp
+[1] 0.001132353
+
+$dis_prob_asymp
+[1] 0
+
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 2 completed in 3885 seconds.
+Launcher: Task 1 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 4 completed in 3959 seconds.
+Launcher: Task 3 done. Exiting.
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 3 completed in 3962 seconds.
+Launcher: Task 2 done. Exiting.
+[1] "Simulation completed"
+[1] "Refreshed"
+[[1]]
+[1] "Epi Probs generated"
+
+Launcher: Job 1 completed in 3986 seconds.
+Launcher: Task 0 done. Exiting.
+Launcher: Done. Job exited without errors

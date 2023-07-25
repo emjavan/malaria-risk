@@ -2,6 +2,8 @@
 # If something wasn't run, re-run it
 # Use inside the code/frontera_parallel_code folder
 
+library(tidyverse)
+
 # Get expected file count
 commands_file = read_table("commands_malaria.txt", col_names = F) %>%
   select(X4, X5) %>%
@@ -12,7 +14,7 @@ commands_file = read_table("commands_malaria.txt", col_names = F) %>%
 n_expect = nrow(commands_file) # 16315 is expected total epi_prob and sim files
 
 # Get actual file counts
-folder_path = "../../processed_data/processed_data_test/" #full_run_processed_data
+folder_path = "../../processed_data/full_run_processed_data/" #full_run_processed_data
 epi_files = list.files(folder_path, pattern = ".csv$") %>%
   enframe(value = "filename") %>%
   select(-name) %>%
@@ -35,6 +37,7 @@ sim_files = list.files(folder_path, pattern = ".rda$") %>%
          import = as.character(import) )
 all_expect_sim_epi = commands_file %>%
   left_join(sim_files, by=c("rnot", "import")) %>%
+  distinct() %>%
   left_join(epi_files, by=c("rnot", "import", "sims")) %>%
   select(-sims, -starts_with("date"))
 all_expect_sim_epi$rda_exists[is.na(all_expect_sim_epi$rda_exists)]=0
@@ -47,7 +50,7 @@ if( !(n_expect==n_epi) ){
   print(paste0("Epi prob files missing. Only ", n_epi, " when ", n_expect, " expected")) 
   epi_missing = all_expect_sim_epi %>%
     filter(csv_exists==0 & rda_exists==1)
-  write.csv(epi_missing, "../../produced_data/missing_epiprobs.csv", row.names = F)
+  write.csv(epi_missing, "../../processed_data/missing_epiprobs.csv", row.names = F)
   base_r_not = unique(epi_missing$rnot)
   intro_rate = unique(epi_missing$import)
   run_df     = expand_grid(base_r_not, intro_rate)
@@ -61,6 +64,8 @@ if( !(n_expect==n_epi) ){
   print("All epi_probs expected available")
 } # end if epi csv does not meet expected count
 
+epi_files_new = list.files(folder_path, pattern = ".csv$")
+print(paste0("now total epi risk files are", length(epi_files_new)))
 
 # Confirm if all sim rda exist and if not write what needs to be run to file
 if( !(n_expect==n_sim) ){
@@ -68,22 +73,14 @@ if( !(n_expect==n_sim) ){
   sims_missing = all_expect_sim_epi %>%
     filter(rda_exists==0) %>%
     select(rnot, import)
-  write.csv(sims_missing, "produced_data/missing_simsrda.csv", row.names = F)
+  write.csv(sims_missing, "../../processed_data/missing_simsrda.csv", row.names = F)
 }else{
   print("All sims expected available")
 } # end if sims rda does not meet expected count
 
 
-
-  
-
-print(n_expect)
-
-
-if( !(n_epi==n_sim) ){
-
-  
-  
+if( !(length(epi_files_new)==n_sim) ){
+  print("Epi prob files and total rda still don't match")  
 }else{
   print("Sims and epi prob have same num of files")
   
