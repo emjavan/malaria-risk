@@ -54,13 +54,13 @@ if( !(n_expect==n_epi) ){
   base_r_not = unique(epi_missing$rnot)
   intro_rate = unique(epi_missing$import)
   path       = folder_path
-  run_df     = expand_grid(base_r_not, intro_rate, path)
+  date       = "2023-07-22"
+  run_df     = expand_grid(base_r_not, intro_rate, path, date)
   num_runs   = 10000
   
   run_df %>% 
     pmap(.f = get_save_path, num_reps = num_runs) %>% # simply gets the path of simulation file generated above
     map(get_epi_prob) # changed this function name from the zika/covid code to be more logical, fnc creates the epidemic prob table
-
 }else{
   print("All epi_probs expected available")
 } # end if epi csv does not meet expected count

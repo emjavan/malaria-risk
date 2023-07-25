@@ -17,7 +17,8 @@ args             = commandArgs(TRUE)
 base_r_not       = as.double(args[1]) # R0
 intro_rate       = as.double(args[2]) # Intro_rate
 path             = "../../processed_data/full_run_processed_data/"
-run_df           = expand_grid(base_r_not, intro_rate, path)
+date             = Sys.Date() # run with one system date even if the job runs over mulitple days
+run_df           = expand_grid(base_r_not, intro_rate, path, date)
 num_runs         = 10000
 
 ## Run and save simulations across all parameter combinations
