@@ -66,7 +66,7 @@ if( !(n_expect==n_epi) ){
 } # end if epi csv does not meet expected count
 
 epi_files_new = list.files(folder_path, pattern = ".csv$")
-print(paste0("now total epi risk files are", length(epi_files_new)))
+print(paste0("now total epi risk files are ", length(epi_files_new)))
 
 # Confirm if all sim rda exist and if not write what needs to be run to file
 if( !(n_expect==n_sim) ){
