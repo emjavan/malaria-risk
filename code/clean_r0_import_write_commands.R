@@ -4,7 +4,9 @@
 # Importation risk from maximum entropy model
 impProbByCounty_new = read_csv("input_data/malaria_probability_next_import_comes_from_county_2023-07-22.csv") %>%
   mutate(daily_import = (ProbNextOcc*2044 - 1)/365, # shifting all values down by 1 bc the sim starts with 1 import
-         daily_import_round3 = round(daily_import, 3))
+         daily_import_round3 = round(daily_import, 3),
+         fips=as.character(fips),
+         fips=ifelse(nchar(fips)==5, fips, paste0(0, fips)) )
 impProbByCounty_new$daily_import_round3[impProbByCounty_new$daily_import_round3<0]=0
 
 uniq_imports = unique(impProbByCounty_new$daily_import_round3)
@@ -14,11 +16,13 @@ range(uniq_imports) # 0 to 0.273
 # County specific R0
 load("input_data/county-single-rnot-estimates_2023-07-13.rda")
 county_single_rnot_samples_new = county_single_rnot_samples %>%
-  mutate(rnot_round2 = round(rnot, 2)  ) %>%
-  left_join(impProbByCounty_new %>% mutate(fips=as.character(fips)), by="fips")
+  mutate(rnot_round2 = round(rnot, 2),
+         fips=as.character(fips),
+         fips=ifelse(nchar(fips)==5, fips, paste0(0, fips)) ) %>%
+  left_join(impProbByCounty_new, by="fips")
 county_single_rnot_samples_new[is.na(county_single_rnot_samples_new)]=0
 uniq_r0 = unique(county_single_rnot_samples_new$rnot_round2)
-length(uniq_r0) # 251 unique daily import probs
+length(uniq_r0) # 251 unique R0
 range(uniq_r0) # 0.00 to 3.65
 write.csv(county_single_rnot_samples_new, 
           "processed_data/all_rnot_import_per_county_2023-07-22.csv", row.names = F)
