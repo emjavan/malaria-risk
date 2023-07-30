@@ -376,12 +376,13 @@ get_epi_prob = function(data_path){
   if(file.exists(epi_path)){
     epi_probs = read_csv(epi_path)
   }else{
-    epi_probs <- rtZIKVrisk::get_epidemic_prob_by_d(trials = sims, 
+    epi_probs = get_epidemic_prob_by_d(trials = sims, 
                                         prev_threshold = 50,
                                         cum_threshold = 1000, # should match e_thresh
                                         max_detect = 100) # the max number of cases to get epi_prob for
+    epi_probs = as.data.frame(epi_probs)
     epi_probs$prob_epidemic[is.na(epi_probs$prob_epidemic)]=1
-    
+
     ## write to processed_data folder to use for plotting
     write.csv(epi_probs, epi_path, row.names = FALSE)
   }
