@@ -25,14 +25,10 @@ num_runs         = 10000
 if(!dir.exists(path)){
   dir.create(path)
 }
-start_time <- Sys.time()
+
 run_df %>% # pipe the 2 inputs into save_malaria_runs function, when refresh is FALSE it will not overwrite an existing output
   pmap(.f = save_malaria_runs, num_reps = num_runs, refresh=TRUE) %>% 
   unlist()
-end_time <- Sys.time()
-total_time = end_time - start_time
-print(paste0("total run time for R0=", base_r_not, " intro_rate=", intro_rate, " num_reps=", num_runs,
-             " is ", round(total_time, 2), " sec" ))
 
 run_df %>% 
   pmap(.f = get_save_path, num_reps = num_runs) %>% # simply gets the path of simulation file generated above

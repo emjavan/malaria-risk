@@ -377,8 +377,8 @@ get_epi_prob = function(data_path){
     epi_probs = read_csv(epi_path)
   }else{
     epi_probs = get_epidemic_prob_by_d(trials = sims, 
-                                        prev_threshold = 50,
-                                        cum_threshold = 1000, # should match e_thresh
+                                        prev_threshold = 50, # prevalence threshold for epidemic classification
+                                        cum_threshold = 1000, # should match e_thresh, cumulative threshold for epidemic classification
                                         max_detect = 100) # the max number of cases to get epi_prob for
     epi_probs = as.data.frame(epi_probs)
     epi_probs$prob_epidemic[is.na(epi_probs$prob_epidemic)]=1
