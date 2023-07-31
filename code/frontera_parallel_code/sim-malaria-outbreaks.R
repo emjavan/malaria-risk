@@ -348,9 +348,12 @@ get_save_path <- function(base_r_not,
 } # end function get_save_path
 
 save_malaria_runs <- function(num_reps,
+                              base_r_not,
+                              intro_rate,
                               refresh=FALSE, # when TRUE will re-write files
                               ...) {
-  parms <- malaria_params_fn() # get the parameters defined above or those passed
+  parms <- malaria_params_fn(base_r_not = base_r_not, 
+                             intro_rate = intro_rate) # get the parameters defined above or those passed
   
   saved_file_path <- get_save_path(base_r_not, intro_rate, num_reps, path, date) # pass params that vary to change file names
   if(!file.exists(saved_file_path) | refresh){
