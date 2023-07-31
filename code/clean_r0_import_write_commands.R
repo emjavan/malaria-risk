@@ -1,8 +1,8 @@
 # Get all the unique combinations of R0 and importation prob
 # R0 rounded to 2 decimal and import to 3
 
-# Importation risk from maximum entropy model
-impProbByCounty_new = read_csv("input_data/malaria_probability_next_import_comes_from_county_2023-07-22.csv") %>%
+# Importation risk from maximum entropy model - newest version
+impProbByCounty_new = read_csv("input_data/malaria_probability_next_import_comes_from_county_2023-07-31.csv") %>%
   mutate(daily_import = (ProbNextOcc*2044 - 1)/365, # shifting all values down by 1 bc the sim starts with 1 import
          daily_import_round3 = round(daily_import, 3),
          fips=as.character(fips),
@@ -10,8 +10,19 @@ impProbByCounty_new = read_csv("input_data/malaria_probability_next_import_comes
 impProbByCounty_new$daily_import_round3[impProbByCounty_new$daily_import_round3<0]=0
 
 uniq_imports = unique(impProbByCounty_new$daily_import_round3)
-length(uniq_imports) # 65 unique daily import probs
-range(uniq_imports) # 0 to 0.273
+length(uniq_imports) # 53 unique daily import probs
+range(uniq_imports) # 0 to 0.18 # these are the new values from 2023-07-31
+
+# Previous version already run on Frontera
+impProbByCounty_old = read_csv("input_data/malaria_probability_next_import_comes_from_county_2023-07-22.csv") %>%
+  mutate(daily_import = (ProbNextOcc*2044 - 1)/365, # shifting all values down by 1 bc the sim starts with 1 import
+         daily_import_round3 = round(daily_import, 3),
+         fips=as.character(fips),
+         fips=ifelse(nchar(fips)==5, fips, paste0(0, fips)) )
+impProbByCounty_old$daily_import_round3[impProbByCounty_old$daily_import_round3<0]=0
+
+old_imports = unique(impProbByCounty_old$daily_import_round3)
+new_import_not_run = old_imports[!(old_imports %in% uniq_imports)] # 25 not run before
 
 # County specific R0
 load("input_data/county-single-rnot-estimates_2023-07-13.rda")
@@ -28,7 +39,10 @@ write.csv(county_single_rnot_samples_new,
           "processed_data/all_rnot_import_per_county_2023-07-22.csv", row.names = F)
 
 # sorting is just for ease of looking at final commands txt file
-all_r0_import = expand.grid(sort(uniq_r0), sort(uniq_imports) ) # 251 * 65 = 16315
+#all_r0_import = expand.grid(sort(uniq_r0), sort(uniq_imports) ) # 251 * 65 = 16315
+
+all_r0_import = expand.grid(sort(uniq_r0), sort(new_import_not_run) ) # 251 * 25 = 6275
+
 
 distinct_r0_import = county_single_rnot_samples_new %>%
   select(fips, rnot_round2, daily_import_round3) %>%
