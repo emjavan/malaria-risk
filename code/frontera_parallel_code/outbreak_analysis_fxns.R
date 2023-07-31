@@ -1,3 +1,6 @@
+################################################
+# Functions to analyze the epidemic simulations
+################################################
 
 
 #' Function to join the epidemic risk for all R0 and import combinations to county case data, then summarize by county
@@ -5,83 +8,97 @@
 #' @param run_location where to look for folders in relation to current working dir run_location="" when opening Rproj in parent dir
 #' @param date the date of the files were created, should match date of code/frontera_parallel_code/run-malaria-sims-only_parallel.R
 #'
+#'
 process_all_epi_prob_to_mean_df = function(run_location="../", date="2023-07-22"){
   # Open files
+  # Case data for each county: This file created by Shraddah 
   county_case_data = read_csv(paste0(run_location, "input_data/uscounties_malria_case_2023-07-19.csv")) %>%
     rename(fips=county_fips) %>%
     mutate(fips=as.character(fips),
            fips=ifelse(nchar(fips)==5, fips, paste0(0, fips)) ) # padding all fips to be 5 char
+  county_case_data_w_epi = county_case_data %>% # initalize data frame where the values for making maps will be stored
+    mutate(sim_run_date          = NA,
+           epi_prob              = NA,
+           case_when_epi_over_50 = NA)
+  # R0 and import data: This file created by code/clean_r0_import_write_commands.R
   r0_import_data = read_csv(paste0(run_location, "processed_data/all_rnot_import_per_county_", date, ".csv")) %>%
-    left_join(county_case_data, by="fips") %>%
-    mutate(fips=ifelse(nchar(fips)==5, fips, paste0(0, fips)) )
+    mutate(fips=ifelse(nchar(fips)==5, fips, paste0(0, fips)) ) %>%
+    group_by(fips, rnot_round2, daily_import_round3) %>%
+    summarize(total_sims = n()) %>% # only keep the count of unique combinations 
+    ungroup() %>%
+    mutate(across(everything(), as.character)) %>%
+    filter(!grepl('^02|^15', fips)) # remove Alaska and Hawaii as they didn't have importation risk estimated
   
-  # Join files and initialize variables for loop
-  all_data = r0_import_data %>%
-    mutate(rnot_round2         = as.character(rnot_round2), # have to be characters to match on join
-           daily_import_round3 = as.character(daily_import_round3),
-           cases    = as.character(cases),
-           epi_numer= NA, # initialize the columns for the join
-           epi_denom= NA,
-           epi_prob = NA) 
-  # Getting the expected R0 and import from files, rather than running on what is in the folder
-  all_r0 = unique(all_data$rnot_round2)
-  all_import = unique(all_data$daily_import_round3)
+  # Largest group of unique R0 and import combinations is 120, so doing the join and calucation by county is fine
+  # Need all 101 case epi numer/denom per county to get the correct epi prob and cases when epi_prob>0.5
+  # grp_sz = r0_import_data %>%
+  #   group_by(fips) %>%
+  #   summarise(size_of_group = n())
+  
+  # Looks like FIPS 51678 is missing from the R0 data - Emily J. 2023-07-31
+  #sort(county_case_data$fips[!(county_case_data$fips %in% r0_import_data$fips)])
+  
   folder_path = paste0(run_location, "processed_data/full_run_processed_data/")
-
-  # Loop over all files to join epi_prob by R0, import, cases
-  for(i in 1:length(all_r0)){ # 1:length(all_r0)
-    for(j in 1:length(all_import)){ # 1:length(all_import)
-      open_file = # open the file of epidemic probabilities and clean-up for join
-        read_csv(
-          paste0(folder_path, "epi_prob_data_", all_r0[i], "_", all_import[j], "_10000_", date, ".csv")) %>%
-        rename(cases    = detected,
-               epi_prob = prob_epidemic) %>%
-        mutate(rnot_round2         = all_r0[i], # doubles have to be characters to join exactly
-               daily_import_round3 = all_import[j] ) %>%
-        mutate(across(everything(), as.character)) # make everything a character
-      
-      #
-      epi_over_50_temp = open_file %>%
-        filter(epi_prob > 0.5) %>%
-        slice(1) %>%
-        select(detected)
-      
-      all_data = all_data %>% # join the epi_probs and clean-up extra columns
-        left_join(open_file, by = c("rnot_round2", "daily_import_round3", "cases")) %>%
-        # the epi_prob we want is the .y joined, so keep it or leave as epi_prob.x
-        mutate(epi_numer = ifelse(is.na(epi_numer.y), epi_numer.x, epi_numer.y),
-               epi_denom = ifelse(is.na(epi_denom.y), epi_denom.x, epi_denom.y),
-               epi_prob = ifelse(is.na(epi_prob.y), epi_prob.x, epi_prob.y) ) %>%
-        select(-epi_prob.x, -epi_prob.y, -epi_numer.x, -epi_numer.y, -epi_denom.x, -epi_denom.y)
-      
-      
-      print(paste0("finished R0=", all_r0[i], " import=", all_import[j]))
-      print(paste0("R0 iter=", i, " import iter=", j))
-      
-      # write the full file of 1K R0 per county to test 
-      write.csv(all_data, paste0(run_location, "processed_data/full_run_all_data_", date, ".csv"), row.names=F)
-      
-      
-      
-    } # end for j over import
-  } # end for i over R0
+  output_folder_path = paste0(folder_path, "clean_epi_files/")
+  files = dir(folder_path, pattern = "*.csv$") # get file names
+  if(!dir.exists(output_folder_path)){dir.create(output_folder_path)}
+  all_county_fips = unique(r0_import_data$fips)
   
-  # write the full file of 1K R0 per county and the summarized one 
-  write.csv(all_data, paste0(run_location, "processed_data/full_run_all_data_", date, ".csv"), row.names=F)
-  
-  # Get mean epi prob per county from all 1000 R0 and mean/min/max R0?
-  mean_all_data = all_data %>%
-    mutate(rnot_round2 = as.double(rnot_round2)) %>%
-    group_by(fips, county, county_full, state_id, state_name,
-             daily_import_round3, population, cases) %>%
-    summarise(rnot_mean = mean(rnot_round2), # , na.rm=T
-              rnot_min = min(rnot_round2),
-              rnot_max = max(rnot_round2),
-              epi_prob_mean = sum(epi_numer)/sum(epi_denom), #mean(epi_prob),
-              epi_prob_min  = min(epi_prob),
-              epi_prob_max  = max(epi_prob))
-  write.csv(mean_all_data, paste0(run_location, "processed_data/full_run_mean_all_data_", date, ".csv"), row.names=F)
-  
+  for(i in 1:length(all_county_fips)){ # 3106, expecting 3107
+    temp_county = r0_import_data %>% # filter to only one county
+      filter(fips == all_county_fips[i])
+    
+    # Join all the epi data by R0 and import for the county filtered above
+    # I don't love this implementation, bc we have to open the files so many times
+    # Can't think of something more robust, trying to avoid nested for loops!
+    epi_data = tibble(filename = files) %>% # create a data frame
+      separate(filename, sep="_", remove = F,
+               into=c(NA, NA, NA, "rnot_round2", "daily_import_round3", "sims", "date")) %>%
+      mutate(fips = all_county_fips[i],
+             across(everything(), as.character)) %>%
+      filter( rnot_round2 %in% temp_county$rnot_round2 ) %>%
+      filter( daily_import_round3 %in% temp_county$daily_import_round3 ) %>%
+      mutate(date = substr(date, 1, 10),
+             file_contents = map(filename, ~read_csv(file.path(folder_path, .))) ) %>%
+      unnest(cols = c(file_contents)) %>% # opens up the joined file contents into new columns in the tibble
+      rename(cases= detected) %>%
+      select(fips, everything(), -prob_epidemic) %>% # the true prob_epidemic will be calculated below
+      left_join(temp_county, by=c("fips", "rnot_round2", "daily_import_round3")) %>%
+      mutate(total_sims = as.numeric(total_sims))
+    # write the full data for epi prob calculation to a file
+    write.csv(epi_data, paste0(output_folder_path, all_county_fips[i], "_all_epi_data_by_case.csv"), row.names = F)
+    
+    # Get epi_prob by all cases for the county
+    epi_sum = epi_data %>%
+      mutate(total_sims = as.numeric(total_sims)) %>%
+      group_by(fips, date, cases) %>%
+      summarise(epi_prob = sum(epi_numer*total_sims)/sum(epi_denom*total_sims)) %>%
+      ungroup() %>%
+      rename(sim_run_date = date)
+    write.csv(epi_data, paste0(output_folder_path, all_county_fips[i], "_all_epi_prob_by_case.csv"), row.names = F)
+    
+    # Trigger threshold of cases when the epi prob is over 0.5
+    epi_over_50 = epi_sum %>%
+      filter(epi_prob > 0.5) %>%
+      arrange(epi_prob) %>%
+      slice(1) %>%
+      rename(case_when_epi_over_50 = cases) %>%
+      select(-epi_prob)
+    
+    county_case_data_w_epi = county_case_data_w_epi %>%
+      left_join(epi_sum, by=c("fips", "cases") ) %>%
+      mutate(epi_prob = ifelse(is.na(epi_prob.y), epi_prob.x, epi_prob.y),
+             sim_run_date = ifelse(is.na(sim_run_date.y), sim_run_date.x, sim_run_date.y)) %>%
+      select(-ends_with(".x"), -ends_with(".y")) %>%
+      left_join(epi_over_50, by=c("fips", "sim_run_date")) %>%
+      mutate(case_when_epi_over_50 = ifelse(is.na(case_when_epi_over_50.y), 
+                                            case_when_epi_over_50.x, case_when_epi_over_50.y)) %>%
+      select(-ends_with(".x"), -ends_with(".y"))
+    
+    # write the updated file every iteration in case it crashes or something, we can keep whatever finished
+    write.csv(county_case_data_w_epi, paste0(output_folder_path, "county_real_epi_prob_and_trigger.csv"), row.names = F)
+    
+  } # end for i loop over counties in the continental US
 } # end function process_all_epi_prob_to_mean_df
 
 
