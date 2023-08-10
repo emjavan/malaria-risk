@@ -36,13 +36,11 @@ uniq_r0 = unique(county_single_rnot_samples_new$rnot_round2)
 length(uniq_r0) # 251 unique R0
 range(uniq_r0) # 0.00 to 3.65
 write.csv(county_single_rnot_samples_new, 
-          "processed_data/all_rnot_import_per_county_2023-07-22.csv", row.names = F)
+          "processed_data/all_rnot_import_per_county_2023-08-01.csv", row.names = F)
 
 # sorting is just for ease of looking at final commands txt file
 #all_r0_import = expand.grid(sort(uniq_r0), sort(uniq_imports) ) # 251 * 65 = 16315
-
 all_r0_import = expand.grid(sort(uniq_r0), sort(new_import_not_run) ) # 251 * 25 = 6275
-
 
 distinct_r0_import = county_single_rnot_samples_new %>%
   select(fips, rnot_round2, daily_import_round3) %>%
