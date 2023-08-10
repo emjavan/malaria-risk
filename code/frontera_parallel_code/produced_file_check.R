@@ -5,13 +5,14 @@
 library(tidyverse)
 
 # Get expected file count
-commands_file = read_table("commands_malaria.txt", col_names = F) %>%
+commands_file = read_delim("commands_malaria_2023-07-22.txt", col_names = F, delim = " ") %>%
+  bind_rows(read_delim("commands_malaria.txt", col_names = F, delim = " ")) %>% # join the later commands file for the new imports to check all exist
   select(X4, X5) %>%
   rename(rnot=X4, import=X5) %>%
   mutate(expect_exists = 1,
          rnot = as.character(rnot),
          import = as.character(import) )
-n_expect = nrow(commands_file) # 16315 is expected total epi_prob and sim files
+n_expect = nrow(commands_file) # 16315 + 6275 = 22590 is expected total epi_prob/sim files from old imports alone
 
 # Get actual file counts
 folder_path = "../../processed_data/full_run_processed_data/" #full_run_processed_data
@@ -46,15 +47,56 @@ all_expect_sim_epi$csv_exists[is.na(all_expect_sim_epi$csv_exists)]=0
 # Check files counts and figure out which files is any need to be processed
 n_epi = nrow(epi_files); n_sim = nrow(sim_files)
 source("sim-malaria-outbreaks.R")
+
+# run missing sims => this is a serial operation, so only do if missing is not obscene 
+# need to balance time waiting in queue on normal for large job with getting one node on small instantly
+if( !(n_expect==n_sim) ){
+  print(paste0("Sim files missing. Only ", n_sim, " when ", n_expect, " expected")) 
+  print(paste0("Still need to run ", (n_expect - n_sim)))
+  if((n_expect-n_sim)>=100){
+    parallel=T; serial=F;
+  }else{
+    serial=T; parallel=F;
+  }
+  
+  sim_missing = all_expect_sim_epi %>%
+    filter(rda_exists==0)
+  write.csv(sim_missing, "../../processed_data/inital_missing_sims.csv", row.names = F)
+  base_r_not = as.numeric(unique(sim_missing$rnot))
+  intro_rate = as.numeric(unique(sim_missing$import))
+  
+  if(serial==T){
+    path       = folder_path
+    date       = "2023-07-30" # change data of later runs for consistency if needed with change_file_name.sh
+    run_df     = expand_grid(base_r_not, intro_rate, path, date)
+    num_runs   = 10000
+    
+    run_df %>% # pipe the 2 inputs into save_malaria_runs function, when refresh is FALSE it will not overwrite an existing output
+      pmap(.f = save_malaria_runs, num_reps = num_runs, refresh=TRUE) %>% 
+      unlist()
+  }else if(parallel==T){
+    missing_r0_import_command = expand_grid(base_r_not, intro_rate) %>%
+      mutate(command = paste0("Rscript --no-save run-malaria-sims-only_parallel.R ", base_r_not, " ", intro_rate ) ) %>%
+      select(command)
+    
+    write.table(missing_r0_import_command, "commands_malaria_missing.txt", 
+                row.names=F, col.names=F, quote=F)
+  } # end how to run 
+  
+}else{
+  print("All sims expected available")
+} # end if epi csv does not meet expected count
+
+# Epi file check once all sims are accounted for
 if( !(n_expect==n_epi) ){
   print(paste0("Epi prob files missing. Only ", n_epi, " when ", n_expect, " expected")) 
   epi_missing = all_expect_sim_epi %>%
     filter(csv_exists==0 & rda_exists==1)
   write.csv(epi_missing, "../../processed_data/missing_epiprobs.csv", row.names = F)
-  base_r_not = unique(epi_missing$rnot)
-  intro_rate = unique(epi_missing$import)
+  base_r_not = as.numeric(unique(epi_missing$rnot))
+  intro_rate = as.numeric(unique(epi_missing$import))
   path       = folder_path
-  date       = "2023-07-22"
+  date       = "2023-07-30"
   run_df     = expand_grid(base_r_not, intro_rate, path, date)
   num_runs   = 10000
   
@@ -74,11 +116,10 @@ if( !(n_expect==n_sim) ){
   sims_missing = all_expect_sim_epi %>%
     filter(rda_exists==0) %>%
     select(rnot, import)
-  write.csv(sims_missing, "../../processed_data/missing_simsrda.csv", row.names = F)
+  write.csv(sims_missing, "../../processed_data/still_missing_simsrda.csv", row.names = F)
 }else{
   print("All sims expected available")
 } # end if sims rda does not meet expected count
-
 
 if( !(length(epi_files_new)==n_sim) ){
   print("Epi prob files and total rda still don't match")  
