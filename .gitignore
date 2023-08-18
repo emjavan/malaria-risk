@@ -54,3 +54,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+code/frontera_parallel_code/new_r0_import_runtimes.txt
+code/frontera_parallel_code/e_o_files/
