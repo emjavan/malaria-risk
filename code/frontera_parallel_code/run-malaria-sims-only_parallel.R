@@ -17,7 +17,7 @@ args             = commandArgs(TRUE)
 base_r_not       = as.double(args[1]) # R0
 intro_rate       = as.double(args[2]) # Intro_rate
 path             = "../../processed_data/full_run_processed_data/"
-date             = Sys.Date() # run/save with one system date even if the job runs over mulitple days
+date             = "2023-08-15"  #Sys.Date() # run/save with one system date even if the job runs over mulitple days
 run_df           = expand_grid(base_r_not, intro_rate, path, date)
 num_runs         = 10000
 
