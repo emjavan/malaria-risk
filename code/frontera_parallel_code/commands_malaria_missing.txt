@@ -1,4 +1,40 @@
-Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178
-Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178
-Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161
-Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set1/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set1/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set1/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set1/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set2/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set2/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set2/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set2/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set3/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set3/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set3/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set3/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set4/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set4/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set4/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set4/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set5/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set5/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set5/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set5/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set6/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set6/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set6/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set6/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set7/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set7/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set7/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set7/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set8/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set8/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set8/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set8/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set9/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set9/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set9/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set9/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set10/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.178 ../../processed_data/full_run_processed_data/set10/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.3 0.161 ../../processed_data/full_run_processed_data/set10/
+Rscript --no-save run-malaria-sims-only_parallel.R 0.4 0.178 ../../processed_data/full_run_processed_data/set10/
