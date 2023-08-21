@@ -1,3 +1,4 @@
+rm commands_malaria_missing.txt
 
 for i in {1..10}; do
    echo "Rscript --no-save run-malaria-sims-only_parallel.R 0.2 0.178 ../../processed_data/full_run_processed_data/set${i}/
