@@ -26,20 +26,12 @@ plot_continental_US_epi_and_trigger=function(run_location="../"){
   # Some counties have missing data bc sims didn't run => will change to be look-up later
   epi_file_path = 
     paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/county_real_epi_prob_and_trigger.csv")
-  # For now pull their min, max R0 and import to confirm their existence
-  min_max_r0_import = read_csv(paste0(run_location, "processed_data/summarized_rnot_import_per_county_2023-07-22.csv")) %>%
-    group_by(fips) %>%
-    summarize(min_R0_from_1K = min(rnot_round1),
-              max_R0_from_1K = max(rnot_round1),
-              import = max(daily_import_round3) ) %>% # only keep the count of unique combinations 
-    ungroup()
   
   county_data = read_csv(epi_file_path) %>%
-    left_join(us_county_geo %>% select(fips, geometry), by="fips") %>%
-    left_join(min_max_r0_import, by ="fips")
+    left_join(us_county_geo %>% select(fips, geometry), by="fips") %>% 
+    mutate(case_when_epi_over_50_cut_off = ifelse(case_when_epi_over_50>20, 20, case_when_epi_over_50))
   
   require(sf)
-  require(cowplot)
   p1 = ggplot(county_data)+
     geom_sf(mapping=aes(geometry=geometry, fill=epi_prob), size = 0.05, color="black")+
     #geom_polygon(aes(group = group, fill = epi_prob*100), color = "black", size = 0.1) +
@@ -61,10 +53,10 @@ plot_continental_US_epi_and_trigger=function(run_location="../"){
     guides(fill = guide_colourbar(ticks.colour='black', ticks.linewidth = 0.25, # barheight = unit(2, "in"), 
                                   border=element_line(color='black')))
   
-  p2 = ggplot(county_data)+
-    geom_sf(mapping=aes(geometry=geometry, fill=case_when_epi_over_50), size = 0.05, color="black")+
+  p2 = ggplot(county_data )+
+    geom_sf(mapping=aes(geometry=geometry, fill=case_when_epi_over_50_cut_off), size = 0.05, color="black")+
     #geom_polygon(aes(group = group, fill = epi_prob*100), color = "black", size = 0.1) +
-    scale_fill_gradient(low = "gainsboro", high = "#2c7fb8", name = "Case Prob>0.5", na.value = "white",
+    scale_fill_gradient(high = "gainsboro", low = "#2c7fb8", name = "Case Prob>0.5", na.value = "white",
                         #breaks=c(0.0, 0.25, 0.50, 0.75, 1.0), 
                         #labels=c(0.0, 0.25, 0.50, 0.75, 1.0), limits=c(0,1.0) 
     )+
@@ -83,9 +75,9 @@ plot_continental_US_epi_and_trigger=function(run_location="../"){
                                   border=element_line(color='black')))
   
   
-  cowplot::plot_grid(p1, p2)
+  plot_list = list(p1, p2)
   
-  return()
+  return(plot_list)
 }
 
 #' Plot heat map of epi prob by R0 and importation across 0-7 cases
@@ -120,7 +112,46 @@ epi_r0_import_plot = function(run_location="../"){
 
 
 
-
+plot_case_by_prob = function(run_location="../"){
+  
+  # Open needed files for plot
+  # Case detect date by the week of detection in Florida reports
+  sara_detect_dates = read_csv(paste0(run_location, "input_data/sarasota_county_cases_through_time_2023-07-29.csv"))
+  # County mean epi_prob by case
+  satasota = 
+    read_csv(paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/12115_all_epi_prob_by_case.csv"))
+  prince_g = 
+    read_csv(paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/24033_all_epi_prob_by_case.csv"))
+  epi_prob = read_csv(paste0(run_location, 
+                             "processed_data/full_run_processed_data/clean_epi_files/county_real_epi_prob_and_trigger.csv")) %>%
+    filter(fips %in% c("12115", "24033"))
+  
+  load(paste0(run_location, "input_data/county-single-rnot-estimates_2023-08-09.rda"))
+  county_of_interest = county_single_rnot_samples %>%
+    filter(fips %in% c("12115", "24033")) %>%
+    mutate(county_name = ifelse(fips=="12115", "Sarasota", "Prince George's") )
+  
+  p1=ggplot(county_of_interest, aes(x=rnot, color=county_name, fill=county_name))+
+    #geom_density(alpha=0.3)+
+    geom_histogram(alpha=0.3)+
+    #facet_grid(~fips)+
+    labs(x="R0", color="", fill="")+
+    theme_bw()+
+    theme(legend.position = c(0.9, 0.5), legend.justification="right")
+  
+  sum_county_of_interest = county_of_interest %>%
+    # county_single_rnot_summary %>%
+    # filter(fips %in% c("12115", "24033"))
+    mutate(rnot_round1 = round(rnot, 1)) %>%
+    group_by(fips) %>%
+    summarise(mean_rnot = mean(rnot_round1),
+              lwr_qnt = quantile(rnot_round1, probs=c(0.025)),
+              upr_qnt = quantile(rnot_round1, probs=c(0.975)),
+              min_rnot = min(rnot_round1),
+              max_rnot = max(rnot_round1) ) %>%
+    ungroup()
+  
+}
 
 
 
