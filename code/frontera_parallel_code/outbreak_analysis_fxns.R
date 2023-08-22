@@ -148,17 +148,8 @@ process_all_epi_prob_to_mean_df = function(run_location="../", date="2023-08-15"
     mutate(across(everything(), as.character)) %>%
     filter(!grepl('^02|^15', fips)) # remove Alaska and Hawaii as they didn't have importation risk estimated
 
-  write.csv(r0_import_data, paste0(run_location, "processed_data/summarized_rnot_import_per_county_2023-08-15.csv"),
+  write.csv(r0_import_data, paste0(run_location, "processed_data/summarized_rnot_import_per_county_", date, ".csv"),
             row.names = F)
-  
-  # Largest group of unique R0 and import combinations is 120, so doing the join and calculation by county is fine
-  # Need all 101 case epi numer/denom per county to get the correct epi prob and cases when epi_prob>0.5
-  # grp_sz = r0_import_data %>%
-  #   group_by(fips) %>%
-  #   summarise(size_of_group = n())
-  
-  # Looks like FIPS 51678 is missing from the R0 data - Emily J. 2023-07-31
-  #sort(county_case_data$fips[!(county_case_data$fips %in% r0_import_data$fips)])
   
   folder_path = paste0(run_location, "processed_data/full_run_processed_data/")
   output_folder_path = paste0(folder_path, "clean_epi_files/")
@@ -194,7 +185,8 @@ process_all_epi_prob_to_mean_df = function(run_location="../", date="2023-08-15"
       
     if(nrow(epi_data)>0){
       epi_data = epi_data %>%
-        mutate(epi_denom = ifelse(is.na(epi_denom), 0, epi_denom)) %>%
+        mutate(epi_denom = ifelse(is.na(epi_denom), 0, epi_denom),
+               epi_numer = ifelse(is.na(epi_numer), 0, epi_numer)) %>%
         rename(cases= detected) %>%
         select(fips, everything(), -prob_epidemic) %>% # the true prob_epidemic will be calculated below
         left_join(temp_county, by=c("fips", "rnot_round1", "daily_import_round3")) %>%
@@ -209,17 +201,14 @@ process_all_epi_prob_to_mean_df = function(run_location="../", date="2023-08-15"
                daily_import_round3 = as.numeric(daily_import_round3)) %>%
         group_by(fips, date, cases) %>%
         # removing NAs for now to just get best guess with the sims we have completed, still waiting on many to finish
-        summarise(mean_R0  = mean(rnot_round1),
+        summarise(mean_R0  = sum(rnot_round1*total_sims)/sum(total_sims),
                max_R0   = max(rnot_round1),
                min_R0   = min(rnot_round1),
                #import   = mean(daily_import_round3),
                epi_prob = sum(epi_numer*total_sims, na.rm = T)/sum(epi_denom*total_sims, na.rm = T)) %>%
         ungroup() %>%
         rename(sim_run_date = date) %>%
-        mutate(epi_prob = ifelse(is.nan(epi_prob), 0, epi_prob)) #%>%
-      #   filter(cases%in% c(0, 1, 3)) 
-      # print(epi_sum[,], n=nrow(epi_sum))
-      # print(epi_sum[,c(7,8,9,15)], n=nrow(epi_sum))
+        mutate(epi_prob = ifelse(is.nan(epi_prob), 0, epi_prob))
       
       write.csv(epi_sum, paste0(output_folder_path, all_county_fips[i], "_all_epi_prob_by_case.csv"), row.names = F)
       
@@ -252,6 +241,7 @@ process_all_epi_prob_to_mean_df = function(run_location="../", date="2023-08-15"
 
     print(paste0("Finished ", i))
   } # end for i loop over counties in the continental US
+  return("All county epi files summarized successfully")
 } # end function process_all_epi_prob_to_mean_df
 
 # Function to organize data for heat map of epi prob by R0, import, and cases
