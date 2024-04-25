@@ -4,6 +4,8 @@ The stochastic SEIR model begins each simulation with one imported infectious in
 
 Model code and parameters can be found in `sim-malaria-outbreaks.R`, but parameters are listed below in Table 1 as well.
 
+
+
 Table 1. 
 | Parameter   | Value  | Source   |
 | :---        | ----:  |     ---: |
