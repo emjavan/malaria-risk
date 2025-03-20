@@ -16,13 +16,6 @@ Table 1.
 | Min day infectious *n*                  | 22          | https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4323116/   |
 | R<sub>0</sub>                           | [0, 5.4]    | Estimated     |
 | Daily importation                       | [0, 0.178]  | (ProbNextOcc\*2044 - 1)/365   |
-| Lambda                                  | Text        | And more      |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
-
-
 
 ## Ingest R0 and probability of next importation from `input_data`, then write commands file
 1. Run `clean_r0_import_write_commands.R` to get the commands file to run all parameter combinations in parallel on Frontera. `generate_commands.sh` is simply to generate an example for testing if you do not want to queue entire job. 
