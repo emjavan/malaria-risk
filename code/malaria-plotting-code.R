@@ -118,20 +118,29 @@ plot_case_by_prob = function(run_location="../"){
   # Case detect date by the week of detection in Florida reports
   sara_detect_dates = read_csv(paste0(run_location, "input_data/sarasota_county_cases_through_time_2023-07-29.csv"))
   # County mean epi_prob by case
-  satasota = 
-    read_csv(paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/12115_all_epi_prob_by_case.csv"))
+  sarasota = 
+    read_csv(paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/12115_all_epi_prob_by_case.csv")) %>%
+    select(fips, cases, epi_prob) %>%
+    filter(cases <= 20)
   prince_g = 
-    read_csv(paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/24033_all_epi_prob_by_case.csv"))
-  epi_prob = read_csv(paste0(run_location, 
-                             "processed_data/full_run_processed_data/clean_epi_files/county_real_epi_prob_and_trigger.csv")) %>%
-    filter(fips %in% c("12115", "24033"))
+    read_csv(paste0(run_location, "processed_data/full_run_processed_data/clean_epi_files/24033_all_epi_prob_by_case.csv")) %>%
+    select(fips, cases, epi_prob) %>%
+    filter(cases <= 20)
   
-  load(paste0(run_location, "input_data/county-single-rnot-estimates_2023-08-09.rda"))
-  county_of_interest = county_single_rnot_samples %>%
+  # # Summarized epi_prob just to check what case epi>50 for plot
+  # epi_prob = read_csv(paste0(run_location,
+  #                            "processed_data/full_run_processed_data/clean_epi_files/county_real_epi_prob_and_trigger.csv")) %>%
+  #   filter(fips %in% c("12115", "24033")) %>%
+  #   select(fips, epi_prob, case_when_epi_over_50)
+  # Sarasota = 8 and Prince George's is NA, so we'll plot epi risk for up to 20 cases
+  
+  # R0 and Importation data for counties of interest
+  county_of_interest = read_csv(paste0(run_location, 
+                                        "processed_data/all_rnot_import_per_county_2023-08-09.csv")) %>%
     filter(fips %in% c("12115", "24033")) %>%
     mutate(county_name = ifelse(fips=="12115", "Sarasota", "Prince George's") )
   
-  p1=ggplot(county_of_interest, aes(x=rnot, color=county_name, fill=county_name))+
+  p1=ggplot(county_of_interest, aes(x=rnot_round1, color=county_name, fill=county_name))+
     #geom_density(alpha=0.3)+
     geom_histogram(alpha=0.3)+
     #facet_grid(~fips)+
@@ -139,18 +148,37 @@ plot_case_by_prob = function(run_location="../"){
     theme_bw()+
     theme(legend.position = c(0.9, 0.5), legend.justification="right")
   
+  boundary_path = paste0(run_location, "processed_data/full_run_processed_data/epi_files_for_county_plot/")
+  r0_from_boundaries = list.files(boundary_path) %>%
+    as_tibble() %>%
+    rename(filename = value) %>%
+    separate(filename, into=c(NA, NA, NA, "rnot_round1", "import", NA, NA), remove=F, sep="_" ) %>%
+    mutate(across(everything(), as.character ))
+  
   sum_county_of_interest = county_of_interest %>%
     # county_single_rnot_summary %>%
     # filter(fips %in% c("12115", "24033"))
     mutate(rnot_round1 = round(rnot, 1)) %>%
     group_by(fips) %>%
-    summarise(mean_rnot = mean(rnot_round1),
+    summarise(import = mean(daily_import_round3),
+              #mean_rnot = round(mean(rnot_round1), 1) ,
               lwr_qnt = quantile(rnot_round1, probs=c(0.025)),
               upr_qnt = quantile(rnot_round1, probs=c(0.975)),
-              min_rnot = min(rnot_round1),
-              max_rnot = max(rnot_round1) ) %>%
-    ungroup()
+              #min_rnot = min(rnot_round1),
+              #max_rnot = max(rnot_round1) 
+              ) %>%
+    ungroup() %>%
+    gather(key=rnot_type, value=rnot_round1, -fips, -import) %>%
+    mutate(across(everything(), as.character)) %>%
+    left_join(r0_from_boundaries, by=c("rnot_round1", "import")) %>%
+    mutate(file_contents = map(filename, ~read_csv(file.path(boundary_path, .)) %>%
+                                 select(detected, prob_epidemic) %>%
+                                 filter(detected <= 20) ) ) %>%
+    unnest(cols = c(file_contents))
   
+  
+  
+
 }
 
 
